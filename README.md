@@ -50,9 +50,9 @@ Una vez importado el script es necesario modificar el fichero database.php dentr
 (application/config/database.php), concretamente las siguientes líneas:
 
 
- $db['default']['hostname'] = 'hostname del servidor';
- $db['default']['username'] = 'usuario del servidor';
- $db['default']['password'] = 'contraseña del servidor';
+$db['default']['hostname'] = 'hostname del servidor';
+$db['default']['username'] = 'usuario del servidor';
+$db['default']['password'] = 'contraseña del servidor';
 
 
 Por último, es necesario modificar el fichero config.php dentro de la aplicación (application/config/config.php), 
