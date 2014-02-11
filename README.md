@@ -51,7 +51,9 @@ Una vez importado el script es necesario modificar el fichero database.php dentr
 
 
 $db['default']['hostname'] = 'hostname del servidor';
+
 $db['default']['username'] = 'usuario del servidor';
+
 $db['default']['password'] = 'contraseña del servidor';
 
 
