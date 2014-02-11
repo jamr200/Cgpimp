@@ -49,6 +49,7 @@ Los pasos para crear la base de datos y cargar el script a través de PHPMyAdmin
 Una vez importado el script es necesario modificar el fichero database.php dentro de la aplicación 
 (application/config/database.php), concretamente las siguientes líneas:
 
+
  $db['default']['hostname'] = 'hostname del servidor';
  $db['default']['username'] = 'usuario del servidor';
  $db['default']['password'] = 'contraseña del servidor';
