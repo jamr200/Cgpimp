@@ -1,0 +1,46 @@
+/*
+Uploadify v2.1.4
+Release Date: November 8, 2010
+Copyright (c) 2010 Ronnie Garcia, Travis Nickels
+*/
+#subir{
+padding: 7px 19px 7px 18px;
+color: #fff;
+background-color: #005702;
+text-decoration: none;
+border-radius: 2px;
+font-size: 12px;
+margin-left: 20px;
+margin-top: 20px;
+}.
+uploadifyQueueItem {
+background-color: #F5F5F5;
+border: 2px solid #E5E5E5;
+font: 11px Verdana, Geneva, sans-serif;
+margin-top: 5px;
+padding: 10px;
+width: 350px;
+}.
+uploadifyError {
+background-color: #FDE5DD !important;
+border: 2px solid #FBCBBC !important;
+}.
+uploadifyQueueItem .cancel {
+float: right;
+}.
+uploadifyQueue .completed {
+background-color: #E5E5E5;
+}.
+uploadifyProgress {
+background-color: #E5E5E5;
+margin-top: 10px;
+width: 100%;
+}.
+uploadifyProgressBar {
+background-color: #f1a165;
+background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
+background-image: -webkit-linear-gradient(#f1a165, #f36d0a);
+height: 16px;
+width: 8px;
+}

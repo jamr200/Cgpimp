@@ -1,0 +1,15 @@
+.align-justfy{
+	text-align: justify;
+}
+.align-right{
+	text-align: right;
+	float: right;
+}
+.align-center{
+	float: none;
+	text-align: center;
+}
+.footer{
+	margin-top: 5%;
+	margin-bottom: 3%;
+}

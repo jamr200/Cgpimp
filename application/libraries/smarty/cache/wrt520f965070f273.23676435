@@ -1,0 +1,81 @@
+<?php /*%%SmartyHeaderCode:13942520f96506a4496-28153146%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '47db2a4eef6c7119ddf32025428598ee2d48d891' => 
+    array (
+      0 => 'application\\views\\templates\\dispositivo\\modal_alta_tipo_dispositivo.tpl',
+      1 => 1376751900,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '13942520f96506a4496-28153146',
+  'variables' => 
+  array (
+    'error1' => 0,
+    'error2' => 0,
+    'success' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.13',
+  'unifunc' => 'content_520f965070de93_02182223',
+  'cache_lifetime' => 120,
+),true); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_520f965070de93_02182223')) {function content_520f965070de93_02182223($_smarty_tpl) {?><div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- ************************-->
+      <div class="modal-header">
+        <h3 class="modal-title">Ingresar Tipo de Dispositivo</h3>
+      </div>
+      <!-- ************************-->
+      <div class="modal-body">
+        <div id="thanks1">
+                    <p class="alert alert-error" style="margin: 1px;">El dispositivo ya ha sido almacenado.
+                                        <form class="FormTipo">
+          <fieldset>
+          <div class="form-group">
+          <label class="control-label" for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" value="hlaa" placeholder="Nombre">
+          </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+      <!-- ************************-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="cerrar1" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="submit1">Guardar</button>
+      </div>
+      <!-- ************************-->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script>
+ $(function() {
+//twitter bootstrap script
+    $("button#submit1").click(function(){
+        $.ajax({
+        type: "POST",
+        url: "http://localhost/pfcdata/dispositivo_controller/addTipoDispositivoModal",
+        data: $('form.FormTipo').serialize(),
+        success: function(msg){
+        	$("#thanks1").html(msg)
+            $("#modal1").modal('hide');
+
+            },
+        error: function(){
+            alert("failure");
+            }
+        });
+    });
+});
+</script>
+<script>
+    $("#cerrar1").click(function(){
+        $("#tipo_dispositivo").load("http://localhost/pfcdata/dispositivo_controller/dame_tipos", $('form.FormTipo').serialize());
+    });
+</script>
+<?php }} ?>
