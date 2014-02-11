@@ -109,7 +109,7 @@ class Usuario_controller extends CI_Controller {
 			$this->smarty->assign('error','Debe rellenar los dos campos.');
 			$this->smarty->view('start/start_view');
 		}
-		elseif(($user->email == "nuevas.tecnologias@velezmalaga.es")&&($user->password == '123456')&&(md5($user->password) == $password_bd))
+		elseif(($user->email == "admin@admin.com")&&($user->password == '123456')&&(md5($user->password) == $password_bd))
 		{//Es necesario cambiar contraseña
 			$this->smarty->view('start/start_view2');
 		}
