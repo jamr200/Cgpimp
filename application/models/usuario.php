@@ -52,7 +52,7 @@ class Usuario extends DataMapper {
     //Funcion para almacenar una nueva contraseña en la base de datos
     function set_password($password)
     {//comprobamos que el usuario no se encuentra almacenado
-        $consulta = $this->db->get_where('usuarios',array('email' => 'nuevas.tecnologias@velezmalaga.es'));
+        $consulta = $this->db->get_where('usuarios',array('email' => 'admin@admin.com'));
         if($consulta->num_rows() === 1)
         {//Como está almacenado, lo modificamos
             //antes encriptamos la contraseña
